@@ -1,0 +1,12 @@
+.text-blue-dark {
+  color: black;
+}
+
+.wallet-adapter-button.wallet-adapter-button-trigger {
+  background: linear-gradient(93.69deg, #7b61ff 0%, #00dad9 107.12%);
+  border-radius: 30px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  letter-spacing: -1px;
+  color: white;
+}

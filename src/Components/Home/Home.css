@@ -1,0 +1,19 @@
+.uploadBackground {
+   background-color: #7b61ff;
+}
+
+.hometitle {
+   font-family: "PoppinsFonts";
+   line-height: 1.2em;
+   background: linear-gradient(93.69deg, #6d42f7 0%, #db13c8 107.12%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-fill-color: transparent;
+ }
+
+ .homebackgroundimage {
+  background: url("../../Assets/images/background.jpeg") no-repeat;
+  background-size: cover;
+}
+
