@@ -4,18 +4,11 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="mx-auto bg-[#250656] border-t-2 border-white">
+      <div className="mx-auto bg-black border-t-2 border-white">
         <footer className="py-12 xl:py-12">
           <div className="px-4 mx-auto w-full max-w-8xl">
             <div className="grid gap-12 xl:grid-cols-6 xl:gap-24">
               <div className="col-span-2">
-                <div className="flex mb-5">
-                  <img
-                    src=""
-                    className="mr-3 h-8"
-                    alt="Logo"
-                  />
-                </div>
                 <p className="mb-5 max-w-sm text-[white] text-2xl">
                   This is an NFT minting site on Cardano.
                 </p>

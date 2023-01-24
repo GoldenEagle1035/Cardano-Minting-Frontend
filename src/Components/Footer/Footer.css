@@ -2,6 +2,12 @@
   font-family: "PoppinsFonts";
   src: url("../../Assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "GeostarFonts";
+  src: url("../../Assets/fonts/Geostar/Geostar-Regular.ttf") format("truetype");
+}
+
 .footertitle {
   font-family: "PoppinsFonts";
   font-size: 32px;

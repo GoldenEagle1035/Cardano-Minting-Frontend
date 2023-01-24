@@ -17,7 +17,7 @@ const Header = ({ }) => {
         <>
             {/* Header */}
             <nav
-                className="bg-[#250656]  text-white py-3 border-b-2 border-white"
+                className="bg-black  text-white py-3 border-b-2 border-white"
             >
                 <div className="container mx-auto flex justify-between items-center  md:gap-2 lg:gap-10 lg:p-0 px-5">
                     <div className="flex justify-between items-center cursor-pointer ">

@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import mintitembg from "../../Assets/images/mintitembackground.png";
+
 import LoadingScreen from 'react-loading-screen';
 
 import {
@@ -40,7 +42,6 @@ const Home = () => {
 
     const onMint = async (num) => {
 
-        return;
         if (!mint_count) {
             toast("Please imput mint count!");
             return;
@@ -79,23 +80,28 @@ const Home = () => {
 
     return (
         <>
-            <div className="bg-[#250656]">
+            <div className="homebackgroundimage">
                 <div className="container max-w-7xl mx-auto px-8 md:px-20 pt-20 min-h-screen">
-                    <h1 className="mt-20 font-bold text-5xl xl:text-6xl text-white mb-4  ">
+                    <div className="justify-center titletext flex gap-2">
+                        <div> Terra </div>
+                        <img className="w-[200px] h-[200px]" src="/images/mechlogo1.png" />
+                        <div> Mecha </div>
+                    </div>
+                    {/* <h1 className="mt-20 font-bold text-5xl xl:text-6xl text-white mb-4  ">
                         Mint
-                    </h1>
+                    </h1> */}
                     <div className="container max-w-7xl mx-auto px-8 md:px-20 pt-20 min-h-screen">
                         {mintingCollections.map((item, index) => {
                             return (
                                 <div className="py-10">
-                                    <div className="homebackgroundimage text-white border-blue-500 border rounded-lg">
+                                    <div className="mintboxbackgroundimage text-white border-blue-500 border rounded-lg">
                                         <div className="max-w-2xl mx-auto py-3 px-4 md:py-4 sm:px-0 md:max-w-7xl md:px-2 rounded-xl mb-6 md:mb-10">
                                             <div className="md:grid md:grid-cols-2 md:gap-x-6 lg:items-start sm:px-6 justify-between h-[600px]">
-                                                <div className="w-full max-w-2xl mx-auto md:max-w-none grid content-between h-full max-w-[500px]">
+                                                <div className=" w-full max-w-2xl mx-auto md:max-w-none grid content-between h-full max-w-[500px]">
                                                     <div>
-                                                        <div className="pt-20 rounded-lg overflow-hidden">
-                                                            <img src={`https://gateway.pinata.cloud/ipfs/${item.RepresentativeIpfs}`}
-                                                                className="px-2 py-2 bg-[#25065670] w-full border-white border-2 h-[300px] object-center object-contain rounded-lg"></img>
+                                                        <div className="mt-20 rounded-lg overflow-hidden">
+                                                            <img src={mintitembg} className="px-2 py-2 w-full border-white border-2 h-[300px] object-center object-contain rounded-lg" />
+                                                            {/* <img src={`https://gateway.pinata.cloud/ipfs/${item.RepresentativeIpfs}`} className="px-2 py-2 w-full border-white border-2 h-[300px] object-center object-contain rounded-lg relative" /> */}
                                                         </div>
                                                     </div>
                                                     <div>
@@ -158,7 +164,7 @@ const Home = () => {
                         <div className="fixed backdrop-filter backdrop-blur-sm bg-backdrop flex items-center justify-center overflow-auto z-50 inset-0">
 
                             <div
-                                className="relative homebackgroundimage dark:bg-blue-darkest rounded-xl shadow-xl py-10 max-w-xl w-11/12 md:w-full"
+                                className="relative mintboxbackgroundimage border-blue-500 border rounded-xl shadow-xl py-10 max-w-xl w-11/12 md:w-full"
                                 style={{ height: "400px" }}
                             >
 
@@ -189,8 +195,8 @@ const Home = () => {
                                         <div className="md:grid md:grid-cols-2 md:gap-x-6 lg:items-start sm:px-6 justify-between">
                                             <div>
                                                 <div className="rounded-lg overflow-hidden">
-                                                    <img src={`https://gateway.pinata.cloud/ipfs/${mintingCollections[selected].RepresentativeIpfs}`}
-                                                        className="px-2 py-2 bg-[#25065670] w-full border-white border-2 h-[200px] object-center object-contain rounded-lg"></img>
+                                                    <img src={mintitembg} className="px-2 py-2 w-full border-white border-2 h-[200px] object-center object-contain rounded-lg" />
+                                                    {/* <img src={`https://gateway.pinata.cloud/ipfs/${mintingCollections[selected].RepresentativeIpfs}`} className="px-2 py-2 w-full border-white border-2 h-[200px] object-center object-contain rounded-lg relative" /> */}
                                                 </div>
                                             </div>
                                             <div className="text-gray-300 overflow-hidden">

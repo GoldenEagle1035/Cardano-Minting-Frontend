@@ -12,8 +12,23 @@
    text-fill-color: transparent;
  }
 
- .homebackgroundimage {
-  background: url("../../Assets/images/background.jpeg") no-repeat;
-  background-size: cover;
+.titletext {
+   font-family: "GeostarFonts";
+   font-size: 100px;
+   color: white;
 }
 
+ .mintboxbackgroundimage {
+  background: url("../../Assets/images/mintboxbackground.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.mintitembackgroundimage {
+   background: url("../../Assets/images/mintitembackground.png") no-repeat;
+   background-size: 100% 100%;
+ }
+
+.homebackgroundimage {
+   background: url("../../Assets/images/mintsitebackround1.png") no-repeat;
+   background-size: 100% 100%;
+ }
